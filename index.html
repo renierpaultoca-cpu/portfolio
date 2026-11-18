@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Renier Paul Toca | IT Student &amp; Aspiring IT Professional</title>
+  <meta name="description" content="Portfolio of Renier Paul Toca, 3rd-year BSIT student at City College of Calamba." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Apply saved theme before paint to avoid a flash -->
+  <script>
+    try { document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark'); } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Renier Paul Toca, back to home">
+        <img src="assets/images/logo.jpg?v=1" alt="Renier Paul — Drive Safely logo" class="logo-img" id="logoImg" />
+        <span class="logo-text">RPT<span>.</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills &amp; Certificates</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark and light mode">
+          <i class="fa-solid fa-sun" id="themeIcon"></i>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1>Renier Paul Toca</h1>
+          <h2 class="hero-title">Information Technology Student / Aspiring IT Professional</h2>
+          <p class="hero-intro">
+            Hello! I'm Renier Paul Toca, a 3rd-year Bachelor of Science in Information Technology student at City College of Calamba. I am passionate about technology, web development, and creating innovative systems that solve real-world problems. I continuously strive to improve my technical skills and expand my knowledge in the IT industry.
+          </p>
+          <div class="btn-row">
+            <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-laptop-code"></i> View My Projects</a>
+            <a href="assets/documents/renier-cv.pdf" class="btn btn-outline" download="Renier-Paul-Toca-CV.pdf"><i class="fa-solid fa-download"></i> Download My CV</a>
+          </div>
+        </div>
+        <div class="hero-photo reveal">
+          <!-- PROFILE PHOTO: replace assets/images/profile.jpg with your own picture -->
+          <div class="photo-frame">
+            <div class="photo-placeholder">
+              <i class="fa-solid fa-user"></i>
+              <span>Your professional photo goes here</span>
+              <small>assets/images/profile.jpg</small>
+            </div>
+            <img src="assets/images/profile.jpg" alt="Portrait of Renier Paul Toca" id="profileImg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head reveal"><h2>About Me</h2><p>A little about who I am and where I'm headed.</p></div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>I am a Bachelor of Science in Information Technology student at City College of Calamba with a strong passion for technology, programming, and artificial intelligence. I am a motivated and adaptable learner who enjoys exploring new technologies and developing solutions to real-world problems.</p>
+            <p>Through my academic experience and system development projects, I continue to strengthen my technical knowledge, problem-solving abilities, and collaboration skills. I am eager to gain more experience, expand my technical expertise, and grow as a future IT professional.</p>
+          </div>
+          <ul class="about-facts reveal">
+            <li><i class="fa-solid fa-graduation-cap"></i><div><strong>Course</strong><span>BS Information Technology</span></div></li>
+            <li><i class="fa-solid fa-book-open"></i><div><strong>Year level</strong><span>3rd Year College</span></div></li>
+            <li><i class="fa-solid fa-school"></i><div><strong>School</strong><span>City College of Calamba</span></div></li>
+            <li><i class="fa-solid fa-calendar"></i><div><strong>College period</strong><span>2024 – Present</span></div></li>
+            <li><i class="fa-solid fa-location-dot"></i><div><strong>Location</strong><span>Calamba City, Laguna, Philippines</span></div></li>
+          </ul>
+        </div>
+
+        <h3 class="sub-head reveal">Languages</h3>
+        <ul class="lang-row reveal">
+          <li class="lang-badge"><i class="fa-solid fa-language"></i><div><strong>Filipino</strong><span>Native</span></div></li>
+          <li class="lang-badge"><i class="fa-solid fa-language"></i><div><strong>English</strong><span>Professional Proficiency</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS & CERTIFICATES -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-head reveal"><h2>Skills &amp; Certificates</h2><p>The areas I work in and the credentials I've earned.</p></div>
+
+        <h3 class="sub-head reveal">Technical and Hard Skills</h3>
+        <div class="grid grid-3">
+          <article class="card skill-group reveal"><i class="fa-solid fa-code"></i><h4>Programming Languages</h4><ul class="chips"><li class="tag">C</li><li class="tag">C++</li><li class="tag">JavaScript</li></ul></article>
+          <article class="card skill-group reveal"><i class="fa-solid fa-globe"></i><h4>Web Development</h4><ul class="chips"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li><li class="tag">React</li><li class="tag">Node</li></ul></article>
+          <article class="card skill-group reveal"><i class="fa-solid fa-clipboard-check"></i><h4>Other IT Focus Areas</h4><ul class="chips"><li class="tag">Software Testing and Debugging</li><li class="tag">System Analysis</li><li class="tag">Technical Documentation</li></ul></article>
+        </div>
+
+        <h3 class="sub-head reveal">Core and Soft Skills</h3>
+        <div class="grid grid-4">
+          <article class="card skill-card reveal"><i class="fa-solid fa-lightbulb"></i><h4>Problem-solving and Analytical Thinking</h4></article>
+          <article class="card skill-card reveal"><i class="fa-solid fa-people-group"></i><h4>Teamwork and Cross-functional Collaboration</h4></article>
+          <article class="card skill-card reveal"><i class="fa-solid fa-clock"></i><h4>Time Management and Efficiency</h4></article>
+          <article class="card skill-card reveal"><i class="fa-solid fa-arrows-rotate"></i><h4>Adaptability and Continuous Learning</h4></article>
+        </div>
+
+        <h3 class="sub-head reveal">Certifications &amp; Documents</h3>
+        <div class="grid grid-4" id="docGrid">
+          <!-- Document cards are rendered by script.js from the DOCUMENTS list -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal"><h2>Projects</h2><p>Two system development projects I've completed.</p></div>
+        <div class="grid grid-2" id="projectGrid">
+          <!-- Project cards are rendered by script.js from the PROJECTS list -->
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section alt">
+      <div class="container">
+        <div class="section-head reveal"><h2>Education</h2><p>My academic journey from elementary to college.</p></div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></span>
+            <div class="card">
+              <h3>City College of Calamba</h3>
+              <p class="edu-degree">Bachelor of Science in Information Technology (BSIT)</p>
+              <ul class="edu-meta">
+                <li><i class="fa-solid fa-calendar"></i> 2024 – Present</li>
+                <li><i class="fa-solid fa-circle-check"></i> Currently Studying</li>
+                <li><i class="fa-solid fa-book-open"></i> 3rd Year College</li>
+                <li><i class="fa-solid fa-location-dot"></i> Calamba City, Laguna, Philippines</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"><i class="fa-solid fa-flask"></i></span>
+            <div class="card">
+              <h3>National University – Laguna</h3>
+              <p class="edu-degree">Senior High School</p>
+              <ul class="edu-meta">
+                <li><i class="fa-solid fa-calendar"></i> 2022 – 2024</li>
+                <li><i class="fa-solid fa-atom"></i> STEM (Science, Technology, Engineering, and Mathematics)</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"><i class="fa-solid fa-school"></i></span>
+            <div class="card">
+              <h3>Makiling Integrated School</h3>
+              <p class="edu-degree">Junior High School</p>
+              <ul class="edu-meta">
+                <li><i class="fa-solid fa-calendar"></i> 2018 – 2022</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"><i class="fa-solid fa-book"></i></span>
+            <div class="card">
+              <h3>Jose Platon Memorial School</h3>
+              <p class="edu-degree">Elementary</p>
+              <ul class="edu-meta">
+                <li><i class="fa-solid fa-calendar"></i> 2011 – 2018</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head reveal"><h2>Contact</h2><p>Have a question or an opportunity? Send me a message.</p></div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="card">
+              <i class="fa-solid fa-envelope big-icon"></i>
+              <h3>Email</h3>
+              <a href="mailto:renierpaultoca@gmail.com">renierpaultoca@gmail.com</a>
+              <p class="muted">Calamba City, Laguna, Philippines</p>
+            </div>
+          </div>
+          <form class="card contact-form reveal" id="contactForm" novalidate>
+            <h3>Send Me a Message</h3>
+            <div class="field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="from_name" autocomplete="name" required />
+              <small class="error-msg" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="from_email" autocomplete="email" required />
+              <small class="error-msg" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+              <small class="error-msg" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <small class="error-msg" aria-live="polite"></small>
+            </div>
+            <button type="submit" class="btn btn-primary" id="sendBtn"><i class="fa-solid fa-envelope"></i> <span>Send via Email</span></button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Renier Paul Toca</strong>
+        <p class="muted">&copy; <span id="year"></span> Renier Paul Toca. All rights reserved.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills &amp; Certificates</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="socials">
+        <!-- Replace the "#" with your real profile links -->
+        <a href="#" aria-label="GitHub (add your link)" title="GitHub: add your link"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn (add your link)" title="LinkedIn: add your link"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- MODAL (shared by certificates and projects) -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalTitle"></h3>
+        <button class="icon-btn" data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
