@@ -17,6 +17,19 @@ const DOCUMENTS = [
 ];
 
 const PROJECTS = [
+   {
+    name: 'BawaTracker – The Controlled and Metal Sensor-Based Robot',
+    screenshots: [
+      'assets/images/project-3a.jpg', 
+      'assets/images/project-3b.jpg', 
+      'assets/images/project-3c.jpg',
+      'assets/images/project-3d.jpg'
+    ],
+    summary: 'A Bluetooth-controlled robotic vehicle equipped with a metal detection sensor to identify metallic waste materials in construction environments.',
+    about: 'BawaTracker is a controlled and sensor-based robotic project designed to help recognize metallic and non-metallic waste materials in construction areas. The robot uses an Arduino UNO R3 microcontroller and a metal detector sensor to identify metallic objects. Through Bluetooth connectivity, users can remotely control the robot movement and monitor its detection capabilities. The project aims to support more efficient construction waste recognition, reduce manual sorting efforts, and contribute to safer and more sustainable waste management practices.',
+    features: ['Bluetooth Remote-Controlled Movement', 'Metal Waste Detection', 'Metal and Non-Metal Waste Recognition', 'Sound and Light Detection Indicators', 'Wireless Robot Operation', 'Sensor-Based Waste Recognition','Robot Movement and Detection Testing'],
+    technologies: ['Arduino UNO R3', 'C++ Programming', 'HC-05 Bluetooth Module', 'Metal Detector Sensor', 'L293D Motor Driver Shield', 'Dual DC Motors']
+  },
   {
     name: 'Asenso \u2013 Kapag Planado, Sigurado!',
     screenshots: [
@@ -425,14 +438,12 @@ form.addEventListener('submit', e => {
   }
 
   const name    = $('#name').value.trim();
-  const email   = $('#email').value.trim();
   const subject = $('#subject').value.trim();
   const message = $('#message').value.trim();
 
   // Build the mailto body
   const body = [
     'Name: ' + name,
-    'Email: ' + email,
     '',
     message
   ].join('\n');
